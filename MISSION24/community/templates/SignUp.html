@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'SignUp' %}" method="post">
+        {% csrf_token %}
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="'password">password</label>
+            <input type="text" name="password" id="password">
+        </div>
+        <div>
+            <label for="'check_password">check_password</label>
+            <input type="text" name="check_password" id="check_password">
+        </div>
+        <div>
+            <label for="name">name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="home">home</label>
+            <input type="text" name="home" id="home">
+        </div>
+        <div>
+            <label for="home_num">home_num</label>
+            <input type="number" name="home_num" id="home_num">
+        </div>
+        <div>
+            <label for="bank">bank</label>
+            <input type="text" name="bank" id="bank">
+        </div>
+        <div>
+            <label for="bank_num">bank_num</label>
+            <input type="text" name="bank_num" id="bank_num">
+        </div>
+        <input type="submit" value="회원가입">
+    </form>
+    
+</body>
+</html>
